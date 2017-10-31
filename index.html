@@ -14,31 +14,71 @@
 			<label class="nav__title">Hardcore &equiv; Cerveja</label>
 			<ul class="nav__menu">
 				<li class="nav__menu__list-item">
-					<a href="">Home</a>
+					<a href="#home">Home</a>
 				</li>
 				<li class="nav__menu__list-item">
-					<a href="">Shows</a>
+					<a href="#shows">Shows</a>
 				</li>
 				<li class="nav__menu__list-item">
-					<a href="">Contato</a>
+					<a href="#gallery">Galeria</a>
+				</li>
+				<li class="nav__menu__list-item">
+					<a href="#contact">Contato</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<div class="banner">
+		<div id="home" class="banner">
 			<img src=".\img\verbo-to-beer.png" class="banner__logo">
 		</div>
-		<section class="shows">
-			<div class="shows__agenda">
-				<h1 class="shows__title">Shows</h1>
-				<div class="shows__title--line"></div>
-				<p style="color: white; text-align: center;">Em breve mais informações!</p>
+		<section id="shows" class="shows">
+			<h1 class="gallery__title">Shows</h1>
+			<div class="gallery__title--line"></div>
+			<table class="shows__table">
+				<thead>
+					<tr>
+						<td class="shows__table__col-date">Data</td>
+						<td class="shows__table__col-location">Localização</td>
+						<td class="shows__table__col-venue">Local</td>
+						<td class="shows__table__col-details">Detalhes</td>
+						<td class="shows__table__col-ticket">Ingressos</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><span class="shows__table__col-date__info-month">Nov.</span><label class="shows__table__col-date__info-day">12</label></td>
+						<td><a class="shows__table__col-location__info-icon" href="https://goo.gl/maps/8itD4ez4Rt52"><i class="fa fa-map-marker" aria-hidden="true"></i></a><label class="shows__table__col-location__info-location">Diadema-SP</label></td>
+						<td><a class="shows__table__col-venue__info" href="https://studio1100.bandcamp.com/">Studio 1100</a></td>
+						<td class="shows__table__col-details__info">Dance of Days, Job Remote, Veneraveis Infames, VERBO to beer</td>
+						<td><a class="shows__table__col-ticket__info" href="https://www.sympla.com.br/dance-of-days--job-remote--veneraveis-infames--verbo-to-beer-no-studio1100__192707"><i class="fa fa-ticket" aria-hidden="true"> Compre já!</i></a></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section id="gallery" class="gallery">
+			<div class="gallery__photos">
+				<h1 class="gallery__title">Fotos</h1>
+				<div class="gallery__title--line"></div>
 			</div>
-			<div class="shows__video">
-				<h1 class="shows__title">Vídeos</h1>
-				<div class="shows__title--line"></div>
-				<iframe class="shows__video__youtube" src="https://www.youtube-nocookie.com/embed/videoseries?list=PL4tpSFUy13hBAZDlXAbZOEfM4yFMFWWQp" frameborder="0" gesture="media" allowfullscreen></iframe>
+			<div class="gallery__video">
+				<h1 class="gallery__title">Vídeos</h1>
+				<div class="gallery__title--line"></div>
+				<iframe class="gallery__video__youtube" src="https://www.youtube-nocookie.com/embed/videoseries?list=PL4tpSFUy13hBAZDlXAbZOEfM4yFMFWWQp" frameborder="0" gesture="media" allowfullscreen></iframe>
 			</div>
 		</section>
 	</main>
